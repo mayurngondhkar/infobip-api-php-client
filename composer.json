@@ -27,7 +27,7 @@
         "ext-json": "*",
         "ext-mbstring": "*",
         "guzzlehttp/guzzle": "~7.0",
-        "symfony/validator": "^6.0|^7.0",
+        "symfony/validator": "^4.4 || ^5.4",
         "symfony/serializer": "^6.0|^7.0",
         "symfony/property-access": "^6.0|^7.0",
         "symfony/cache": "^4.4 || ^5.4",
