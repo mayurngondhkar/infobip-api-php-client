@@ -33,23 +33,23 @@ use Infobip\Test\Api\ApiTestBase;
 
 class ManageWhatsAppApiTest extends ApiTestBase
 {
-    private const string BASE_ENDPOINT = '/whatsapp';
+    private const BASE_ENDPOINT = '/whatsapp';
 
-    private const string CREATE_TEMPLATE_ENDPOINT = self::BASE_ENDPOINT . '/2/senders/{sender}/templates';
-    private const string DELETE_MEDIA_ENDPOINT = self::BASE_ENDPOINT . '/1/senders/{sender}/media';
-    private const string GET_TEMPLATES_ENDPOINT = self::BASE_ENDPOINT . '/2/senders/{sender}/templates';
-    private const string GET_WHATSAPP_TEMPLATE = self::BASE_ENDPOINT . '/2/senders/{sender}/templates/{templateId}';
-    private const string EDIT_WHATSAPP_TEMPLATE = self::BASE_ENDPOINT . '/2/senders/{sender}/templates/{templateId}';
-    private const string DELETE_WHATSAPP_TEMPLATE = self::BASE_ENDPOINT . '/2/senders/{sender}/templates/{templatesName}';
-    private const string GET_WHATSAPP_UPI_PAYU_PAYMENT_STATUS = self::BASE_ENDPOINT . '/1/senders/{sender}/payments/upi/payu/{paymentId}';
-    private const string GET_WHATSAPP_BRAZIL_PAYMENT_STATUS = self::BASE_ENDPOINT . '/1/senders/{sender}/payments/br/{paymentId}';
-    private const string GET_WHATSAPP_UPI_PAYMENT_STATUS = self::BASE_ENDPOINT . '/1/senders/{sender}/payments/upi/{paymentId}';
-    private const string GET_WHATSAPP_SENDERS_QUALITY = self::BASE_ENDPOINT . '/1/senders/quality';
-    private const string GET_WHATSAPP_SENDER_BUSINESS_INFO = self::BASE_ENDPOINT . '/1/senders/{sender}/business-info';
-    private const string UPDATE_WHATSAPP_SENDER_BUSINESS_INFO = self::BASE_ENDPOINT . '/1/senders/{sender}/business-info';
-    private const string ADD_WHATSAPP_SENDER = self::BASE_ENDPOINT . '/1/embedded-signup/registrations/business-account/{businessAccountId}/senders';
-    private const string VERIFY_WHATSAPP_SENDER = self::BASE_ENDPOINT . '/1/embedded-signup/registrations/senders/{sender}/verification';
-    private const string RETRY_WHATSAPP_SENDER_VERIFICATION = self::BASE_ENDPOINT . '/1/embedded-signup/registrations/senders/{sender}/verification';
+    private const CREATE_TEMPLATE_ENDPOINT = self::BASE_ENDPOINT . '/2/senders/{sender}/templates';
+    private const DELETE_MEDIA_ENDPOINT = self::BASE_ENDPOINT . '/1/senders/{sender}/media';
+    private const GET_TEMPLATES_ENDPOINT = self::BASE_ENDPOINT . '/2/senders/{sender}/templates';
+    private const GET_WHATSAPP_TEMPLATE = self::BASE_ENDPOINT . '/2/senders/{sender}/templates/{templateId}';
+    private const EDIT_WHATSAPP_TEMPLATE = self::BASE_ENDPOINT . '/2/senders/{sender}/templates/{templateId}';
+    private const DELETE_WHATSAPP_TEMPLATE = self::BASE_ENDPOINT . '/2/senders/{sender}/templates/{templatesName}';
+    private const GET_WHATSAPP_UPI_PAYU_PAYMENT_STATUS = self::BASE_ENDPOINT . '/1/senders/{sender}/payments/upi/payu/{paymentId}';
+    private const GET_WHATSAPP_BRAZIL_PAYMENT_STATUS = self::BASE_ENDPOINT . '/1/senders/{sender}/payments/br/{paymentId}';
+    private const GET_WHATSAPP_UPI_PAYMENT_STATUS = self::BASE_ENDPOINT . '/1/senders/{sender}/payments/upi/{paymentId}';
+    private const GET_WHATSAPP_SENDERS_QUALITY = self::BASE_ENDPOINT . '/1/senders/quality';
+    private const GET_WHATSAPP_SENDER_BUSINESS_INFO = self::BASE_ENDPOINT . '/1/senders/{sender}/business-info';
+    private const UPDATE_WHATSAPP_SENDER_BUSINESS_INFO = self::BASE_ENDPOINT . '/1/senders/{sender}/business-info';
+    private const ADD_WHATSAPP_SENDER = self::BASE_ENDPOINT . '/1/embedded-signup/registrations/business-account/{businessAccountId}/senders';
+    private const VERIFY_WHATSAPP_SENDER = self::BASE_ENDPOINT . '/1/embedded-signup/registrations/senders/{sender}/verification';
+    private const RETRY_WHATSAPP_SENDER_VERIFICATION = self::BASE_ENDPOINT . '/1/embedded-signup/registrations/senders/{sender}/verification';
 
     public function testCreateWhatsAppTemplate(): void
     {

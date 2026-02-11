@@ -11,9 +11,9 @@ use Symfony\Component\Serializer\Exception\ExceptionInterface;
 
 class DateSerializationTest extends TestCase
 {
-    private const int EXPECTED_TIMESTAMP = 2071051722;
-    private const string EXPECTED_DATE = '2035-08-18T12:08:42.777Z';
-    private const string TEST_TIMEZONE = 'UTC';
+    private const EXPECTED_TIMESTAMP = 2071051722;
+    private const EXPECTED_DATE = '2035-08-18T12:08:42.777Z';
+    private const TEST_TIMEZONE = 'UTC';
 
     private static string $initialDefaultTimezone;
 

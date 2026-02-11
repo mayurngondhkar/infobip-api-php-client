@@ -21,10 +21,10 @@ use Throwable;
 
 abstract class ApiTestBase extends TestCase
 {
-    private const string API_KEY_PREFIX = "App";
-    private const string API_KEY = "testApiKey";
-    private const string HOST = "http://localhost:8080";
-    private const string EXPECTED_USER_AGENT = 'infobip-api-client-php/6.2.1/PHP';
+    private const API_KEY_PREFIX = "App";
+    private const API_KEY = "testApiKey";
+    private const HOST = "http://localhost:8080";
+    private const EXPECTED_USER_AGENT = 'infobip-api-client-php/6.2.1/PHP';
 
     protected array $givenRequestHeaders = [
         'content-type'  => 'application/json;charset=UTF-8',

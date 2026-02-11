@@ -10,11 +10,11 @@ use SplFileObject;
 
 class ReceiveWhatsAppApiTest extends ApiTestBase
 {
-    private const string BASE_ENDPOINT = '/whatsapp';
+    private const BASE_ENDPOINT = '/whatsapp';
 
-    private const string DOWNLOAD_INBOUND_MEDIA_ENDPOINT = self::BASE_ENDPOINT . '/1/senders/{sender}/media/{mediaId}';
-    private const string GET_MEDIA_METADATA_ENDPOINT = self::BASE_ENDPOINT . '/1/senders/{sender}/media/{mediaId}';
-    private const string MARK_AS_READ_ENDPOINT = self::BASE_ENDPOINT . '/1/senders/{sender}/message/{messageId}/read';
+    private const DOWNLOAD_INBOUND_MEDIA_ENDPOINT = self::BASE_ENDPOINT . '/1/senders/{sender}/media/{mediaId}';
+    private const GET_MEDIA_METADATA_ENDPOINT = self::BASE_ENDPOINT . '/1/senders/{sender}/media/{mediaId}';
+    private const MARK_AS_READ_ENDPOINT = self::BASE_ENDPOINT . '/1/senders/{sender}/message/{messageId}/read';
 
 
     public function testDownloadWhatsAppInboundMedia(): void

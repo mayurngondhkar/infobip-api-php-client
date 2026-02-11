@@ -4,19 +4,12 @@
     "version": "6.2.1",
     "keywords": [
         "infobip",
-        "sms",
         "whatsapp",
         "messaging",
-        "email",
-        "viber",
-        "calls",
         "php",
-        "tfa",
         "sdk",
         "rest",
         "api",
-        "msisdn",
-        "2fa",
         "openapi"
     ],
     "homepage": "https://www.infobip.com",
@@ -29,15 +22,15 @@
         }
     ],
     "require": {
-        "php": ">=8.3",
+        "php": ">=8.0",
         "ext-curl": "*",
         "ext-json": "*",
         "ext-mbstring": "*",
         "guzzlehttp/guzzle": "~7.0",
-        "symfony/validator": "^7.0",
-        "symfony/serializer": "^7.0",
-        "symfony/property-access": "^7.0",
-        "symfony/cache": "^7.0",
+        "symfony/validator": "^6.0|^7.0",
+        "symfony/serializer": "^6.0|^7.0",
+        "symfony/property-access": "^6.0|^7.0",
+        "symfony/cache": "^6.0|^7.0",
         "phpdocumentor/reflection-docblock": "^5.0|^6.0"
     },
     "require-dev": {

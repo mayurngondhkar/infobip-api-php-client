@@ -13,12 +13,12 @@ use Infobip\Test\Api\ApiTestBase;
 
 class IdentityChangeWhatsAppApiTest extends ApiTestBase
 {
-    private const string BASE_ENDPOINT = '/whatsapp';
+    private const BASE_ENDPOINT = '/whatsapp';
 
-    private const string CONFIRM_WHATSAPP_IDENTITY_ENDPOINT = self::BASE_ENDPOINT
+    private const CONFIRM_WHATSAPP_IDENTITY_ENDPOINT = self::BASE_ENDPOINT
         . '/1/{sender}/contacts/{userNumber}/identity';
 
-    private const string GET_WHATSAPP_IDENTITY_ENDPOINT = self::BASE_ENDPOINT
+    private const GET_WHATSAPP_IDENTITY_ENDPOINT = self::BASE_ENDPOINT
         . '/1/{sender}/contacts/{userNumber}/identity';
 
 

@@ -3,7 +3,7 @@
 /**
  * OneOfInterfaceDenormalizer
  *
- * PHP version 8.3
+ * PHP version 8.0
  *
  * @category Class
  * @package  Infobip

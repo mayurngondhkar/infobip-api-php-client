@@ -79,26 +79,26 @@ use InvalidArgumentException;
 
 class SendWhatsAppApiTest extends ApiTestBase
 {
-    private const string BASE_ENDPOINT = '/whatsapp';
+    private const BASE_ENDPOINT = '/whatsapp';
 
-    private const string AUDIO_MESSAGE_ENDPOINT = self::BASE_ENDPOINT . '/1/message/audio';
-    private const string CONTACT_MESSAGE_ENDPOINT = self::BASE_ENDPOINT . '/1/message/contact';
-    private const string DOCUMENT_MESSAGE_ENDPOINT = self::BASE_ENDPOINT . '/1/message/document';
-    private const string IMAGE_MESSAGE_ENDPOINT = self::BASE_ENDPOINT . '/1/message/image';
-    private const string INTERACTIVE_BUTTONS_MESSAGE_ENDPOINT = self::BASE_ENDPOINT . '/1/message/interactive/buttons';
-    private const string INTERACTIVE_LIST_MESSAGE_ENDPOINT = self::BASE_ENDPOINT . '/1/message/interactive/list';
-    private const string LOCATION_MESSAGE_ENDPOINT = self::BASE_ENDPOINT . '/1/message/location';
-    private const string STICKER_MESSAGE_ENDPOINT = self::BASE_ENDPOINT . '/1/message/sticker';
-    private const string TEMPLATE_MESSAGE_ENDPOINT = self::BASE_ENDPOINT . '/1/message/template';
-    private const string TEXT_MESSAGE_ENDPOINT = self::BASE_ENDPOINT . '/1/message/text';
-    private const string VIDEO_MESSAGE_ENDPOINT = self::BASE_ENDPOINT . '/1/message/video';
-    private const string SEND_WHATSAPP_INTERACTIVE_LOCATION_REQUEST_MESSAGE = self::BASE_ENDPOINT . "/1/message/interactive/location-request";
-    private const string SEND_WHATSAPP_INTERACTIVE_PRODUCT_MESSAGE = self::BASE_ENDPOINT . "/1/message/interactive/product";
-    private const string SEND_WHATSAPP_INTERACTIVE_MULTI_PRODUCT_MESSAGE = self::BASE_ENDPOINT . "/1/message/interactive/multi-product";
-    private const string SEND_WHATSAPP_INTERACTIVE_ORDER_DETAILS_MESSAGE = self::BASE_ENDPOINT . "/1/message/interactive/order-details";
-    private const string SEND_WHATSAPP_INTERACTIVE_ORDER_STATUS_MESSAGE = self::BASE_ENDPOINT . "/1/message/interactive/order-status";
-    private const string SEND_WHATSAPP_INTERACTIVE_FLOW_MESSAGE = self::BASE_ENDPOINT . "/1/message/interactive/flow";
-    private const string SEND_WHATSAPP_INTERACTIVE_URL_BUTTON_MESSAGE = self::BASE_ENDPOINT . "/1/message/interactive/url-button";
+    private const AUDIO_MESSAGE_ENDPOINT = self::BASE_ENDPOINT . '/1/message/audio';
+    private const CONTACT_MESSAGE_ENDPOINT = self::BASE_ENDPOINT . '/1/message/contact';
+    private const DOCUMENT_MESSAGE_ENDPOINT = self::BASE_ENDPOINT . '/1/message/document';
+    private const IMAGE_MESSAGE_ENDPOINT = self::BASE_ENDPOINT . '/1/message/image';
+    private const INTERACTIVE_BUTTONS_MESSAGE_ENDPOINT = self::BASE_ENDPOINT . '/1/message/interactive/buttons';
+    private const INTERACTIVE_LIST_MESSAGE_ENDPOINT = self::BASE_ENDPOINT . '/1/message/interactive/list';
+    private const LOCATION_MESSAGE_ENDPOINT = self::BASE_ENDPOINT . '/1/message/location';
+    private const STICKER_MESSAGE_ENDPOINT = self::BASE_ENDPOINT . '/1/message/sticker';
+    private const TEMPLATE_MESSAGE_ENDPOINT = self::BASE_ENDPOINT . '/1/message/template';
+    private const TEXT_MESSAGE_ENDPOINT = self::BASE_ENDPOINT . '/1/message/text';
+    private const VIDEO_MESSAGE_ENDPOINT = self::BASE_ENDPOINT . '/1/message/video';
+    private const SEND_WHATSAPP_INTERACTIVE_LOCATION_REQUEST_MESSAGE = self::BASE_ENDPOINT . "/1/message/interactive/location-request";
+    private const SEND_WHATSAPP_INTERACTIVE_PRODUCT_MESSAGE = self::BASE_ENDPOINT . "/1/message/interactive/product";
+    private const SEND_WHATSAPP_INTERACTIVE_MULTI_PRODUCT_MESSAGE = self::BASE_ENDPOINT . "/1/message/interactive/multi-product";
+    private const SEND_WHATSAPP_INTERACTIVE_ORDER_DETAILS_MESSAGE = self::BASE_ENDPOINT . "/1/message/interactive/order-details";
+    private const SEND_WHATSAPP_INTERACTIVE_ORDER_STATUS_MESSAGE = self::BASE_ENDPOINT . "/1/message/interactive/order-status";
+    private const SEND_WHATSAPP_INTERACTIVE_FLOW_MESSAGE = self::BASE_ENDPOINT . "/1/message/interactive/flow";
+    private const SEND_WHATSAPP_INTERACTIVE_URL_BUTTON_MESSAGE = self::BASE_ENDPOINT . "/1/message/interactive/url-button";
 
     public function testSendWhatsAppAudioMessage(): void
     {

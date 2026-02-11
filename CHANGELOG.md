@@ -4,6 +4,12 @@ All notable changes to the library will be documented in this file.
 
 The format of the file is based on [Keep a Changelog](http://keepachangelog.com/) and this library adheres to [Semantic Versioning](http://semver.org/) as mentioned in the [README.md][readme] file.
 
+## [Unreleased]
+
+### Changed
+* Lower minimum supported PHP version to 8.0.
+* Relax Symfony component constraints to allow both 6.x and 7.x versions.
+
 ## [ [6.2.1](https://github.com/infobip/infobip-api-php-client/releases/tag/6.2.0) ] - 2025-01-24
 
 ### Added

@@ -2,7 +2,6 @@
 
 namespace Infobip\Test\Api;
 
-use Infobip\Model\SmsUpdateStatusRequest;
 use Infobip\Model\WhatsAppAudioContent;
 use Infobip\ObjectSerializer;
 use InvalidArgumentException;
@@ -44,10 +43,6 @@ class ValidationTest extends TestCase
     public static function modelDataProvider(): array
     {
         return [
-            [
-                new SmsUpdateStatusRequest(status: ''),
-                ['This value should not be blank.']
-            ],
             [
                 new WhatsAppAudioContent(mediaUrl: str_repeat('m', 2049)),
                 ['This value is too long']
